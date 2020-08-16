@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Swiss Army Katana",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.codewars.com/users/*/completed_solutions"
+			],
+			"js": ["content.js"],
+			"css": ["buttons.css"]
+		}
+	],
+	"permissions": [
+		"activeTab"
+	]
+}
